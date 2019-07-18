@@ -1,7 +1,8 @@
 <template>
   <div class="wraper-card-components">
     <div class="img showData" v-if="!visible" @click.prevent ="visible =!visible">
-      <img :src="'data:image/svg+xml;base64,' + card.image" alt="image">
+      <img :src="'data:image/svg+xml;base64,' + card.image" alt="image" class="image-bg">
+      <img src="https://www.stickees.com/files/love/gifts/458-yellow-and-red-gift-box.png" class="img-main-bg">
     </div>
     <div class="table-results" v-else @click.prevent ="visible =!visible">
       <div class="_wrapper-block-table">

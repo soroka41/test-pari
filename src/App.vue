@@ -66,11 +66,12 @@
     width: 100%;
     position: relative;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .img img{
-    width: 100%;
-    height: 300px;
-    border-radius: 10px 10px 0 0
+
   }
   ul {
     padding: 0;
@@ -148,6 +149,17 @@
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
+  }
+  .image-bg {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0
+  }
+  .img-main-bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
   }
 </style>
 
